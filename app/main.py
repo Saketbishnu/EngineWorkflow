@@ -19,6 +19,14 @@ app = FastAPI(
     title="Mini Agent Workflow Engine",
     description="Simple workflow/graph engine for AI Engineering Internship assignment",
 )
+@app.get("/")
+async def root():
+    return {
+        "message": "Mini Agent Workflow Engine is running",
+        "docs_url": "/docs",
+        "info": "Use /graph/example/summarization to create example workflow"
+    }
+
 
 
 @app.on_event("startup")
