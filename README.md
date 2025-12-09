@@ -1,3 +1,4 @@
+📂 Project Structure
 app/
 │── main.py                     
 │
@@ -9,3 +10,4 @@ app/
 │
 └── workflows/
     └── summarization.py
+
